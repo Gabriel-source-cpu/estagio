@@ -1,0 +1,24 @@
+void main() {
+  
+  double sp = 67836.43;
+  double rj = 36678.66;
+  double mg = 29229.88;
+  double es = 27165.48;
+  double outros = 19849.53;
+  
+  double somaTotal = sp + rj + mg + es + outros;
+  
+  var porcentagemSP = ((sp/somaTotal) * 100).toStringAsFixed(2);
+  var porcentagemRJ = ((rj/somaTotal) * 100).toStringAsFixed(2);
+  var porcentagemMG = ((mg/somaTotal) * 100).toStringAsFixed(2);
+  var porcentagemES = ((es/somaTotal) * 100).toStringAsFixed(2);
+  var porcentagemOT = ((outros/somaTotal) * 100).toStringAsFixed(2);
+  
+  print("PORCENTAGEM PARCIAL DE SP: $porcentagemSP%");
+  print("PORCENTAGEM PARCIAL DE RJ: $porcentagemRJ%");
+  print("PORCENTAGEM PARCIAL DE MG: $porcentagemMG%");
+  print("PORCENTAGEM PARCIAL DE ES: $porcentagemES%");
+  print("PORCENTAGEM PARCIAL DOS OUTROS ESTADOS: $porcentagemOT%");
+  
+  
+}
