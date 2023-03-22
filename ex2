@@ -1,0 +1,30 @@
+void main() {
+  int numero = 21;
+  int fibonacci = 0;
+  int indice = 1;
+
+  List<int> fib = [];
+
+  while (fibonacci <= numero) {
+    if (fibonacci <= 1) {
+      fib.add(fibonacci);
+      fibonacci++;
+    } else {
+      fibonacci = fib[indice - 1] + fibonacci;
+      fib.add(fibonacci);
+
+      indice++;
+
+      
+    }
+    
+  }
+  
+  if(fib.contains(numero)){
+    print("O numero em questão está presente na sequência!");
+    
+  } else {
+    print("O numero em questão não está presente na sequência!");
+  }
+  
+}
