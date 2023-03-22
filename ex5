@@ -1,0 +1,20 @@
+import 'dart:convert' show utf8;
+
+void main() {
+  String palavra = "Estagio";
+  int index = palavra.length;
+
+  List<int> ordenada = [];
+  List<int> reversa = [];
+
+  ordenada = palavra.codeUnits;
+
+  ordenada.map((carac) {
+    reversa.add(ordenada[index - 1]);
+    index--;
+  }).toList();
+
+ final palavraReversa = utf8.decode(reversa);
+  print(palavraReversa);
+  //print(reversa);
+}
